@@ -6,6 +6,7 @@ int main(void){
 ifstream num("C:/Users/felly/Documents/Estrutura de dados/Ordenaçãocpp/entrada.txt");
 string linha;
 //num.open("entrada.txt");
+// comentário teste
 
 if(num.is_open()){
     while(getline(num, linha)){
