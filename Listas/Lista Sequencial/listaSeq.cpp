@@ -24,7 +24,7 @@ int Lista_Sequencial::obter_Valor(int indice){
     return dados[indice-1];
 }
 void Lista_Sequencial::modificar_Valor(int indice, int num){
-    dados[indice] = num;
+    dados[indice-1] = num;
 }
 void Lista_Sequencial::inserir_Elemento(int n){
     if(lista_Cheia()==0){
@@ -33,8 +33,8 @@ void Lista_Sequencial::inserir_Elemento(int n){
     }
 }
 void Lista_Sequencial::retirar_Elemento(int indice){
-    if(indice>=0 && indice<=tamAtual){
-        for(int i=indice; i<tamAtual-1; i++){
+    if(indice>=1 && indice<=tamAtual){
+        for(int i=indice-1; i<tamAtual-1; i++){
             dados[i] = dados[i+1];
         }
         tamAtual--;
