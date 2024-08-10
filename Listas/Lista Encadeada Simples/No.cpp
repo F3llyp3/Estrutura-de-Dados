@@ -11,9 +11,9 @@ int No::getConteudo(){
     return conteudo;
 }
 
-void No::setProx(int* p){
+void No::setProx(No* p){
     prox = p;
 }
-int No::getProx(){
-    return  *prox;
+No* No::getProx(){
+    return  prox;
 }

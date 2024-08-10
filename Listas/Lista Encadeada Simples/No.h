@@ -5,11 +5,11 @@ using namespace std;
 class No{
     private:
         int conteudo;
-        int* prox;
+        No* prox;
     public:
         No();
-        void setProx(int* p);
+        void setProx(No* p);
         No* getProx();
         void setConteudo(int n);
-        int getConteudo();      
+        int getConteudo();
 };
